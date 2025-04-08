@@ -9,10 +9,10 @@ export const navLinks = [
     label: 'Details',
     pathname: '/#details',
   },
-  {
-    label: 'Articles',
-    pathname: '/articles',
-  },
+  // {
+  //   label: 'Articles',
+  //   pathname: '/articles',
+  // },
   {
     label: 'Contact',
     pathname: '/contact',
@@ -21,13 +21,13 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Bluesky',
+    label: 'Gmail',
     url: `https://bsky.app/profile/${config.bluesky}`,
     icon: 'bluesky',
   },
   {
-    label: 'Figma',
-    url: `https://www.figma.com/${config.figma}`,
+    label: 'LinkedIn',
+    url: `https://www.linkedin.com/in/sunidhi-yadav-05b5b9268/`,
     icon: 'figma',
   },
   {

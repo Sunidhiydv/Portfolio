@@ -20,7 +20,7 @@ const ProfileText = ({ visible, titleId }) => (
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
+    {/* <Text className={styles.description} data-visible={visible} size="l" as="p">
       I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
       <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
       animations, and icon illustration. Being comfortable with code allows me to rapidly
@@ -31,6 +31,12 @@ const ProfileText = ({ visible, titleId }) => (
       In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
       <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
       about new projects, so feel free to drop me a line.
+    </Text> */}
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+    I’m Sunidhi Yadav, currently pursuing a Bachelor of Engineering in IT from Mumbai University. I’m passionate about software development, particularly in Machine Learning, Blockchain, and Web Development. My projects range from full-stack applications and hackathon prototypes to blockchain-powered solutions. I enjoy exploring new technologies, optimizing for SEO, and building scalable, impactful applications.
+    </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+    In my spare time, I like to experiment with new frameworks, participate in hackathons, and explore uplifting hobbies. I’m always open to exciting projects and collaborations, so feel free to reach out!
     </Text>
   </Fragment>
 );

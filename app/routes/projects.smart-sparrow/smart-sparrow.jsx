@@ -341,7 +341,7 @@ export const SmartSparrow = () => {
           </ProjectSectionColumns>
         </ProjectSection>
         <ThemeProvider theme="dark" data-invert>
-          <Suspense>
+          {/* <Suspense>
             <Earth
               className={styles.earth}
               hideMeshes={useMemo(
@@ -519,7 +519,7 @@ export const SmartSparrow = () => {
                 meshes={['Atmosphere', 'EarthFull']}
               />
             </Earth>
-          </Suspense>
+          </Suspense> */}
         </ThemeProvider>
         <ProjectSection>
           <ProjectSectionContent>

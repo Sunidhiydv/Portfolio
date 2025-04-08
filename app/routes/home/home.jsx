@@ -108,14 +108,9 @@ export const Home = () => {
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
-          textures: [
-            {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
+          type: 'laptop', // or 'phone', just for styling
+          alt: 'Screenshot of my project',
+          screenshot: 'https://th.bing.com/th/id/OIP.U_VJuupQohwnzXcKMztqWgHaEo?rs=1&pid=ImgDetMain', // path to your image
         }}
       />
       <ProjectSummary
@@ -129,18 +124,9 @@ export const Home = () => {
         buttonText="View website"
         buttonLink="https://gamestack.hamishw.com"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
+          type: 'laptop', // or 'phone', just for styling
+          alt: 'Screenshot of my project',
+          screenshot: 'https://th.bing.com/th/id/OIP.U_VJuupQohwnzXcKMztqWgHaEo?rs=1&pid=ImgDetMain', // path to your image
         }}
       />
       <ProjectSummary
@@ -153,14 +139,9 @@ export const Home = () => {
         buttonText="View project"
         buttonLink="/projects/slice"
         model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
+          type: 'laptop', // or 'phone', just for styling
+          alt: 'Screenshot of my project',
+          screenshot: 'https://th.bing.com/th/id/OIP.U_VJuupQohwnzXcKMztqWgHaEo?rs=1&pid=ImgDetMain', // path to your image
         }}
       />
       <Profile
