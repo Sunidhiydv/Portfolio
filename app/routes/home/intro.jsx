@@ -101,8 +101,8 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                           className={styles.word}
                           data-plus={true}
                           data-status={status}
-                          style={{...cssProps({ delay: tokens.base.durationL }), // Spread the object
-                          fontSize: '62px'}}
+                          // style={{...cssProps({ delay: tokens.base.durationL }), // Spread the object
+                          // fontSize: '62px'}}
                         >
                           {item}
                         </span>

@@ -276,4 +276,98 @@
   }
 }
 /* xxx */
+/* styles.module.css or wherever your styles are defined */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* When .summary has data-alternate="true" */
+/* :global([data-alternate="true"]) .content {
+  flex-direction: row-reverse !important;
+  border: 3px dashed limegreen;
+} */
+
+
+.projectImage {
+  max-width: 100%;
+  max-height: 400px; /* Adjust height as needed */
+  object-fit: contain;
+}
+.model {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.details,
+.preview {
+  flex: 1;
+  min-width: 0; /* ✅ Prevents overflow in flex children */
+  max-width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.summary[data-alternate='true'] .preview {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.summary[data-alternate='true'] .preview img {
+  max-width: 90%;  /* Controls how much space image takes */
+  height: auto;
+  object-fit: cover;
+  margin-left: 70px;
+  margin-right: auto;
+  border-radius: 10px; /* optional: make it look neat */
+}
+
+.summary[data-alternate='true'] .details {
+  max-width: 90%;  /* Controls how much space image takes */
+  height: auto;
+  object-fit: cover;
+  margin-left: 100px;
+  margin-right: auto;
+}
+.summary[data-alternate='true'] .details {
+  margin-left: 200px;
+  margin-right: 0;
+  align-items: flex-start;
+  text-align: left;
+}
+
+@media (--mediaTablet) {
+  .summary[data-alternate='true'] .content {
+    grid-template-columns: 100%;
+    flex-direction: column-reverse;
+    gap: var(--spaceXL);
+  }
+
+  .summary[data-alternate='true'] .preview {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .summary[data-alternate='true'] .preview img {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .summary[data-alternate='true'] .details {
+    width: 50%;
+    margin-left: 0;
+    text-align: left;
+    align-items: start;
+    justify-content: left;
+  }
+}
 

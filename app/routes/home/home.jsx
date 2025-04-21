@@ -100,6 +100,7 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-1"
+        alternate={false}
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
@@ -115,7 +116,7 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-2"
-        alternate
+        alternate={true}
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
@@ -131,6 +132,7 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-3"
+        alternate={false}
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
@@ -144,6 +146,7 @@ export const Home = () => {
           screenshot: 'https://th.bing.com/th/id/OIP.U_VJuupQohwnzXcKMztqWgHaEo?rs=1&pid=ImgDetMain', // path to your image
         }}
       />
+      
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
