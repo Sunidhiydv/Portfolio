@@ -1,3 +1,6 @@
+import projectOneImage from '~/assets/project-1.jpg'; // Add your import
+import projectTwoImage from '~/assets/project-2.jpg'; // Add your import
+import projectThreeImage from '~/assets/project-3.jpg'; // Add your import
 import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
 import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
 import gamestackTexture2 from '~/assets/gamestack-list.jpg';
@@ -111,7 +114,7 @@ export const Home = () => {
         model={{
           type: 'laptop', // or 'phone', just for styling
           alt: 'Screenshot of my project',
-          screenshot: 'https://th.bing.com/th/id/OIP.U_VJuupQohwnzXcKMztqWgHaEo?rs=1&pid=ImgDetMain', // path to your image
+          screenshot: projectOneImage, // path to your image
         }}
       />
       <ProjectSummary
@@ -127,7 +130,7 @@ export const Home = () => {
         model={{
           type: 'laptop', // or 'phone', just for styling
           alt: 'Screenshot of my project',
-          screenshot: 'https://th.bing.com/th/id/OIP.U_VJuupQohwnzXcKMztqWgHaEo?rs=1&pid=ImgDetMain', // path to your image
+          screenshot: projectTwoImage, // path to your image
         }}
       />
       <ProjectSummary
@@ -143,7 +146,7 @@ export const Home = () => {
         model={{
           type: 'laptop', // or 'phone', just for styling
           alt: 'Screenshot of my project',
-          screenshot: 'https://th.bing.com/th/id/OIP.U_VJuupQohwnzXcKMztqWgHaEo?rs=1&pid=ImgDetMain', // path to your image
+          screenshot: projectThreeImage, // path to your image
         }}
       />
       
