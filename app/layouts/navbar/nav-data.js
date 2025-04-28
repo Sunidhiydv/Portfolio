@@ -21,14 +21,14 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Gmail',
-    url: `https://bsky.app/profile/${config.bluesky}`,
-    icon: 'bluesky',
+    label: 'X',
+    url: `https://x.com/sunidhiydv`,
+    icon: 'x',
   },
   {
-    label: 'LinkedIn',
+    label: 'linkedin',
     url: `https://www.linkedin.com/in/sunidhi-yadav-05b5b9268/`,
-    icon: 'figma',
+    icon: 'linkedin',
   },
   {
     label: 'Github',
