@@ -1,18 +1,7 @@
 import projectOneImage from '~/assets/project-1.jpg'; // Add your import
 import projectTwoImage from '~/assets/project-2.jpg'; // Add your import
 import projectThreeImage from '~/assets/project-3.jpg'; // Add your import
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -110,7 +99,7 @@ export const Home = () => {
         title="Designing the future of education"
         description="Designing a platform to help educators build better online courseware"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink=""
         model={{
           type: 'laptop', // or 'phone', just for styling
           alt: 'Screenshot of my project',
@@ -126,7 +115,7 @@ export const Home = () => {
         title="Video game progress tracking"
         description="Design and development for a video game tracking app built in React Native"
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="https://insider-jobs-client.vercel.app/"
         model={{
           type: 'laptop', // or 'phone', just for styling
           alt: 'Screenshot of my project',
@@ -142,7 +131,7 @@ export const Home = () => {
         title="Biomedical image collaboration"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="https://heathcare-pager.netlify.app/"
         model={{
           type: 'laptop', // or 'phone', just for styling
           alt: 'Screenshot of my project',

@@ -114,30 +114,30 @@
 .image {
   position: relative;
   width: 100%;
+  max-width: 480px; /* Add this line to restrict width */
+  margin: 0 auto; /* Center the image container */
 }
 
-.svg {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translate3d(50%, -20%, 0);
-  height: 100%;
-  z-index: var(--zIndex3);
-  opacity: 0;
-  transition: opacity var(--durationM) ease var(--durationL);
-  fill: var(--textTitle);
+.image img {
+  width: 100%;
+  height: auto;
+  max-height: 600px; /* Add this to restrict height */
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-  &[data-visible='true'] {
-    opacity: 1;
+@media (--mediaTablet) {
+  .image {
+    max-width: 400px; /* Smaller on tablets */
   }
 }
 
-.button {
-  opacity: 0;
-  transition: opacity var(--durationXL) ease var(--durationL);
-
-  &[data-visible='true'] {
-    transform: none;
-    opacity: 1;
+@media (--mediaMobile) {
+  .image {
+    max-width: 300px; /* Even smaller on mobile */
+  }
+  
+  .image img {
+    max-height: 400px;
   }
 }
